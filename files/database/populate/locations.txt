@@ -1,0 +1,263 @@
+--Location da inserire
+
+--Alloggio
+
+--Hotel
+INSERT INTO residenza VALUES('Via San Giovanni Maggiore','15','80134','Napoli',null);
+INSERT INTO location VALUES(null,'Decumani Hotel','R1000','Alloggio','IT6HF4DT6O8','Situato in un edificio storico nel cuore del centro storico di Napoli, il Decumani Hotel De Charme offre camere arredate con mobili d epoca.');
+UPDATE alloggio SET prezzo_medio=120,tipo_alloggio='Hotel' WHERE cod='LOC1000';
+UPDATE hotel SET n_camere=20, n_suite=5, stelle=4 WHERE cod='LOC1000';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='si' ,piscina='si' ,aria_condizionata='si' ,accesso_disabili='si' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='si', servizio_ristorazione='si', tv_stereo='si', parcheggio='si' WHERE cod='LOC1000';
+
+INSERT INTO residenza VALUES('Via Marina Grande','179','80076','Capri',null);
+INSERT INTO location VALUES(null,'Excelsior Hotel','R1001','Alloggio','IT8G5FD4J89','A 650 m dalla spiaggia, questo lussuoso hotel in stile art nouveau costruito nel 1906 sul sito di un antica villa romana');
+UPDATE alloggio SET prezzo_medio=200,tipo_alloggio='Hotel' WHERE cod='LOC1001';
+UPDATE hotel SET n_camere=15, n_suite=6, stelle=5 WHERE cod='LOC1001';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='si' ,piscina='si' ,aria_condizionata='si' ,accesso_disabili='si' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='si', servizio_ristorazione='si', tv_stereo='si', parcheggio='no' WHERE cod='LOC1001';
+
+INSERT INTO residenza VALUES('Via Cristoforo Colombo','45','80133','Napoli',null);
+INSERT INTO location VALUES(null,'Hotel Romeo','R1002','Alloggio','IT6HF4D5D48','Questo hotel raffinato e moderno, affacciato sul Golfo di Napoli e sul Vesuvio, dista 6 minuti a piedi dalla fermata della metropolitana');
+UPDATE alloggio SET prezzo_medio=290,tipo_alloggio='Hotel' WHERE cod='LOC1002';
+UPDATE hotel SET n_camere=20, n_suite=5, stelle=4 WHERE cod='LOC1002';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='si' ,piscina='si' ,aria_condizionata='si' ,accesso_disabili='si' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='si', servizio_ristorazione='si', tv_stereo='si', parcheggio='si' WHERE cod='LOC1002';
+
+INSERT INTO residenza VALUES('Via Carbonara','112','80139','Sant Antonio Abate',null);
+INSERT INTO location VALUES(null,'Palazzo Caracciolo','R1003','Alloggio','IT6HF4D5DA5','Situato a 8 minuti a piedi dalla fermata della metropolitana più vicina, questo hotel di lusso, con facciata neoclassica e cortile interno');
+UPDATE alloggio SET prezzo_medio=290,tipo_alloggio='Hotel' WHERE cod='LOC1003';
+UPDATE hotel SET n_camere=20, n_suite=5, stelle=3 WHERE cod='LOC1003';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='si' ,piscina='si' ,aria_condizionata='si' ,accesso_disabili='si' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='si', servizio_ristorazione='si', tv_stereo='si', parcheggio='si' WHERE cod='LOC1003';
+
+INSERT INTO residenza VALUES('Via Partenope','38','80121','Sana Lucia',null);
+INSERT INTO location VALUES(null,'Royal Continental','R1004','Alloggio','IT6HF4D5DA5','Situato davanti al Golfo di Napoli, questo sofisticato hotel dista 2 minuti a piedi da Castel dell Ovo');
+UPDATE alloggio SET prezzo_medio=120,tipo_alloggio='Hotel' WHERE cod='LOC1004';
+UPDATE hotel SET n_camere=20, n_suite=5, stelle=4 WHERE cod='LOC1004';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='si' ,piscina='si' ,aria_condizionata='si' ,accesso_disabili='si' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='si', servizio_ristorazione='si', tv_stereo='si', parcheggio='si' WHERE cod='LOC1004';
+
+--BeB
+INSERT INTO residenza VALUES('Via Speranzella','109','80132','Napoli',null);
+INSERT INTO location VALUES(null,'Antica Capri BeB','R1005','Alloggio',default,default);
+UPDATE alloggio SET prezzo_medio=70,tipo_alloggio='BeB' WHERE cod='LOC1005';
+UPDATE beb SET n_camere=5, stelle=2, bagno_comune='no' WHERE cod='LOC1005';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='no' ,piscina='no' ,aria_condizionata='si' ,accesso_disabili='no' ,accesso_animali='no' ,ascensore='no', servizio_lavanderia='no', servizio_ristorazione='no', tv_stereo='si', parcheggio='no' WHERE cod='LOC1005';
+
+INSERT INTO residenza VALUES('Via Gian Lorenzo','45','80129','Vomero',null);
+INSERT INTO location VALUES(null,'Gentile Relais BeB','R1006','Alloggio','IT7HD6U01YW','Camere eleganti dotate di frigobar in BeB accogliente in edificio dell 800 con cortile e WiFi gratuito.');
+UPDATE alloggio SET prezzo_medio=70,tipo_alloggio='BeB' WHERE cod='LOC1006';
+UPDATE beb SET n_camere=6, stelle=2, bagno_comune='no' WHERE cod='LOC1006';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='no' ,piscina='no' ,aria_condizionata='si' ,accesso_disabili='no' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='no', servizio_ristorazione='no', tv_stereo='si', parcheggio='no' WHERE cod='LOC1006';
+
+INSERT INTO residenza VALUES('Piazza Sannazaro','200','80122','Piedigrotta',null);
+INSERT INTO location VALUES(null,'Maison Mari BeB','R1007','Alloggio','ITH28SFAK9G','Camere luminose con arredi a tinte vivaci e WiFi gratuito in BeB confortevole.');
+UPDATE alloggio SET prezzo_medio=50,tipo_alloggio='BeB' WHERE cod='LOC1007';
+UPDATE beb SET n_camere=6, stelle=2, bagno_comune='no' WHERE cod='LOC1007';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='no' ,piscina='no' ,aria_condizionata='si' ,accesso_disabili='no' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='no', servizio_ristorazione='no', tv_stereo='si', parcheggio='no' WHERE cod='LOC1007';
+
+INSERT INTO residenza VALUES('Corso Vittorio Emanuele','110','80122','Chiaia',null);
+INSERT INTO location VALUES(null,'Napoli Franca BeB','R1008','Alloggio','IT7HD6F41YW','Questo BeB sobrio a conduzione familiare dista 13 minuti a piedi dalla stazione Mergellina della metropolitana');
+UPDATE alloggio SET prezzo_medio=70,tipo_alloggio='BeB' WHERE cod='LOC1008';
+UPDATE beb SET n_camere=3, stelle=2, bagno_comune='no' WHERE cod='LOC1008';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='no' ,piscina='no' ,aria_condizionata='si' ,accesso_disabili='si' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='no', servizio_ristorazione='no', tv_stereo='si', parcheggio='no' WHERE cod='LOC1008';
+
+INSERT INTO residenza VALUES('Via Marziale','27','80067','Sorrento',null);
+INSERT INTO location VALUES(null,'Vista mare BeB','R1009','Alloggio','ITTH72141YW','A soli 10 passi dal mare… VistaMare BeB è situato in via Posillipo, prestigiosa strada panoramica che si inerpica lungo l omonima splendida collina');
+UPDATE alloggio SET prezzo_medio=70,tipo_alloggio='BeB' WHERE cod='LOC1009';
+UPDATE beb SET n_camere=3, stelle=2, bagno_comune='no' WHERE cod='LOC1009';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='no' ,piscina='no' ,aria_condizionata='si' ,accesso_disabili='si' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='no', servizio_ristorazione='no', tv_stereo='si', parcheggio='si' WHERE cod='LOC1009';
+
+--Appartamento
+INSERT INTO residenza VALUES('Via Duomo','319','80133','Napoli',null);
+INSERT INTO location VALUES(null,'Be Italian','R1010','Alloggio',default,default);
+UPDATE alloggio SET prezzo_medio=50,tipo_alloggio='Appartamento' WHERE cod='LOC1010';
+UPDATE appartamento SET n_vani=4 ,n_bagni=2,cucina='si' ,veranda='no' WHERE cod='LOC1010';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='no' ,piscina='no' ,aria_condizionata='si' ,accesso_disabili='no' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='no', servizio_ristorazione='no', tv_stereo='si', parcheggio='no' WHERE cod='LOC1010';
+
+INSERT INTO residenza VALUES('Via dei Tribunali','275','80138','Napoli',null);
+INSERT INTO location VALUES(null,'Duetto al Duomo','R1011','Alloggio','ITTH72148F1',default);
+UPDATE alloggio SET prezzo_medio=60,tipo_alloggio='Appartamento' WHERE cod='LOC1011';
+UPDATE appartamento SET n_vani=3 ,n_bagni=1 ,cucina='si' ,veranda='no' WHERE cod='LOC1011';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='no' ,piscina='no' ,aria_condizionata='si' ,accesso_disabili='no' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='no', servizio_ristorazione='no', tv_stereo='si', parcheggio='no' WHERE cod='LOC1011';
+
+INSERT INTO residenza VALUES('Piazzetta Materdei','8','80136','Materdei',null);
+INSERT INTO location VALUES(null,'La Gatta Cenerentola','R1012','Alloggio','IT8H4DT5UG7','Camere spaziose, bagni confortevoli e ben attrezzati, si dorme ....meglio che a casa!');
+UPDATE alloggio SET prezzo_medio=60,tipo_alloggio='Appartamento' WHERE cod='LOC1012';
+UPDATE appartamento SET n_vani=3 ,n_bagni=2 ,cucina='si' ,veranda='no' WHERE cod='LOC1012';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='no' ,piscina='no' ,aria_condizionata='si' ,accesso_disabili='no' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='no', servizio_ristorazione='no', tv_stereo='si', parcheggio='no' WHERE cod='LOC1012';
+
+INSERT INTO residenza VALUES('Vico S. Spiritoi','54','80132','Pallonetto',null);
+INSERT INTO location VALUES(null,'Sunrise Luxury','R1013','Alloggio','IT6HF4DT6O8','Dotato di un centro spa e benessere, il Sunrise Luxury');
+UPDATE alloggio SET prezzo_medio=60,tipo_alloggio='Appartamento' WHERE cod='LOC1013';
+UPDATE appartamento SET n_vani=5 ,n_bagni=2 ,cucina='si' ,veranda='si' WHERE cod='LOC1013';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='si' ,piscina='no' ,aria_condizionata='si' ,accesso_disabili='si' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='no', servizio_ristorazione='no', tv_stereo='si', parcheggio='no' WHERE cod='LOC1013';
+
+INSERT INTO residenza VALUES('Via dei Carrozzieri','29','80134','Monteoliveto',null);
+INSERT INTO location VALUES(null,'Tredici Botique','R1014','Alloggio','IT6HF4DRMLU','Il Tredici Boutique Rooms sorge nel centro storico di Napoli, a 1 km dal Museo Archeologico Nazionale, dal Maschio Angioino e dal Teatro San Carlo');
+UPDATE alloggio SET prezzo_medio=60,tipo_alloggio='Appartamento' WHERE cod='LOC1014';
+UPDATE appartamento SET n_vani=4 ,n_bagni=2 ,cucina='si' ,veranda='no' WHERE cod='LOC1014';
+UPDATE servizi_alloggio SET wi_fi='si' ,dayuse='no' ,spa='no' ,piscina='no' ,aria_condizionata='si' ,accesso_disabili='no' ,accesso_animali='no' ,ascensore='si', servizio_lavanderia='no', servizio_ristorazione='no', tv_stereo='si', parcheggio='no' WHERE cod='LOC1014';
+
+--Ristoranti
+
+--Pizzeria
+INSERT INTO residenza VALUES('Via Cesare Sersale','1','80139','Napoli',null);
+INSERT INTO location VALUES(null,'Pizzeria Da Michele','R1015','Ristorante','IT124758687','Pizze margherita e marinara servite tra tavoli di marmo e pareti piastrellate in un piccolo locale vivace.');
+UPDATE ristorazione SET prezzo_medio=30, n_posti=25,tipo_ristorazione='Pizzeria' WHERE cod='LOC1015';
+UPDATE pizzeria SET asporto='si', tipo_forno='A legna' WHERE cod='LOC1015';
+
+INSERT INTO residenza VALUES('Via dei Tribunali','32','80138','Napoli',null);
+INSERT INTO location VALUES(null,'Sorbillo','R1016','Ristorante','IT254698574','Fritti e pizza napoletana serviti su 2 livelli in un gettonato locale dal clima familiare con mattoni a vista.');
+UPDATE ristorazione SET prezzo_medio=20, n_posti=50,tipo_ristorazione='Pizzeria' WHERE cod='LOC1016';
+UPDATE pizzeria SET asporto='si', tipo_forno='A legna' WHERE cod='LOC1016';
+
+INSERT INTO residenza VALUES('Via Francesco de Sanctis','19/21','80134','Napoli',null);
+INSERT INTO location VALUES(null,'Pizzeria Da Carminiello','R1017','Ristorante','IT123547854','Zeppole, panzarotti e pizze serviti ai tavolini in marmo di un locale dal clima informale e confortevole.');
+UPDATE ristorazione SET prezzo_medio=15, n_posti=20,tipo_ristorazione='Pizzeria' WHERE cod='LOC1017';
+UPDATE pizzeria SET asporto='si', tipo_forno='A legna' WHERE cod='LOC1017';
+
+--SushiBar
+INSERT INTO residenza VALUES('Viale JFK','91','80125','Fuorigrotta',null);
+INSERT INTO location VALUES(null,'ONE SUSHI','R1018','Ristorante','IT125463695','Menù giapponese e cinese, anche con formula all you can eat, tra gli arredi minimal di un ristorante elegante.');
+UPDATE ristorazione SET prezzo_medio=14, n_posti=77,tipo_ristorazione='SushiBar' WHERE cod='LOC1018';
+UPDATE sushibar SET AllYouCanEat='si', tipo_sushi='Fusion' WHERE cod='LOC1018';
+
+INSERT INTO residenza VALUES('Via Luca Giordano','33','80127','Vomero',null);
+INSERT INTO location VALUES(null,'Hachi Sushi','R1019','Ristorante','IT256325698','Sushi e sashimi, anche con formula all you can eat, in un ristorante minimalista con divanetti imbottiti.');
+UPDATE ristorazione SET prezzo_medio=20, n_posti=60,tipo_ristorazione='SushiBar' WHERE cod='LOC1019';
+UPDATE sushibar SET AllYouCanEat='si', tipo_sushi='Giapponese' WHERE cod='LOC1019';
+
+INSERT INTO residenza VALUES('Via Alessandro Manzoni','126','80123','Fuorigrotta',null);
+INSERT INTO location VALUES(null,'Hozen Sushi','R1020','Ristorante','IT126598475','Maki, sushi e sashimi, anche d asporto, proposti in un locale con arredi e dettagli in stile minimal-elegante.');
+UPDATE ristorazione SET prezzo_medio=17, n_posti=60,tipo_ristorazione='SushiBar' WHERE cod='LOC1020';
+UPDATE sushibar SET AllYouCanEat='si', tipo_sushi='Fusion' WHERE cod='LOC1020';
+
+--Braceria
+INSERT INTO residenza VALUES('Corso Europa','460','80010','Villaricca',null);
+INSERT INTO location VALUES(null,'MasterGrill','R1021','Ristorante','IT165498569','Carne grigliata e panini serviti su tovagliette di carta in un gastropub che trasmette anche eventi sportivi.');
+UPDATE ristorazione SET prezzo_medio=50, n_posti=25,tipo_ristorazione='Braceria' WHERE cod='LOC1021';
+UPDATE braceria SET asporto='no',alcolici_artigianali='si',tipo_carne='Italiana' WHERE cod='LOC1021';
+
+INSERT INTO residenza VALUES('Via Michelangelo da Carv.','56','80126','Napoli',null);
+INSERT INTO location VALUES(null,'Braceria Pastore','R1022','Ristorante','IT125478254','Braceria a conduzione familiare che offre tagli pregiati e carni di prima scelta oltre che stuzzichini e birre fatte nei propri plessi.');
+UPDATE ristorazione SET prezzo_medio=100, n_posti=22,tipo_ristorazione='Braceria' WHERE cod='LOC1022';
+UPDATE braceria SET asporto='no',alcolici_artigianali='si',tipo_carne='Entrambe' WHERE cod='LOC1022';
+
+INSERT INTO residenza VALUES(' Via S. Salvatore','1','80026','Casoria',null);
+INSERT INTO location VALUES(null,'Old Wild West','R1023','Ristorante','IT125478789','Nel multi bit di casoria, quest è il miglior OLD WILD WEST di Napoli e Dintorni.');
+UPDATE ristorazione SET prezzo_medio=60, n_posti=80,tipo_ristorazione='Braceria' WHERE cod='LOC1023';
+UPDATE braceria SET asporto='no',alcolici_artigianali='si',tipo_carne='Entrambe' WHERE cod='LOC1023';
+
+--Pizza e Brace
+INSERT INTO residenza VALUES('Viale Terracciano','87','84010','Sant Egidio',null);
+INSERT INTO location VALUES(null,'SceScè','R1024','Ristorante','IT565896985','Anche se lontana la braceria e pizzeria SceScè vi delizierà con prodotti scelti della propria terra salernitana');
+UPDATE ristorazione SET prezzo_medio=66, n_posti=33,tipo_ristorazione='Pizza e Brace' WHERE cod='LOC1024';
+UPDATE braceria SET asporto='si',alcolici_artigianali='si',tipo_carne='Italiana' WHERE cod='LOC1024';
+UPDATE pizzeria SET asporto='si', tipo_forno='A legna' WHERE cod='LOC1024';
+
+INSERT INTO residenza VALUES('Via Arenaccia','88','80144','Napoli',null);
+INSERT INTO location VALUES(null,'Buongiorno Napoli','R1025','Ristorante','IT565896985','Buongiorno Napoli offre le miglioripizze con due metodi di cottura a scelta per il cliente, è possibile servizio braceria su prenotazione.');
+UPDATE ristorazione SET prezzo_medio=44, n_posti=22,tipo_ristorazione='Pizza e Brace' WHERE cod='LOC1025';
+UPDATE braceria SET asporto='si',alcolici_artigianali='si',tipo_carne='Entrambe' WHERE cod='LOC1025';
+UPDATE pizzeria SET asporto='si', tipo_forno='Entrambi' WHERE cod='LOC1025';
+
+INSERT INTO residenza VALUES('Corso Aldo Moro','260','81055','Santa Maria CV',null);
+INSERT INTO location VALUES(null,'Mamà','R1026','Ristorante','IT123659874','Mamà burger e pizza offre una scelta sui propri alimenti di alta qualità gourmet e servendosi di chef anche stellati nei propri ristoranti.');
+UPDATE ristorazione SET prezzo_medio=60, n_posti=40,tipo_ristorazione='Pizza e Brace' WHERE cod='LOC1026';
+UPDATE braceria SET asporto='si',alcolici_artigianali='si',tipo_carne='Italiana' WHERE cod='LOC1026';
+UPDATE pizzeria SET asporto='si', tipo_forno='A legna' WHERE cod='LOC1026';
+
+--Brace e Sushi
+INSERT INTO residenza VALUES('Via Paolo Riverso','1','81031','Aversa',null);
+INSERT INTO location VALUES(null,'Fuji','R1027','Ristorante','IT125698565','Fuji è un ristorante giapponese con menù alla carta a scelta tra piatti tipici internazionali.');
+UPDATE ristorazione SET prezzo_medio=110, n_posti=50,tipo_ristorazione='Brace e Sushi' WHERE cod='LOC1027';
+UPDATE braceria SET asporto='no', alcolici_artigianali='no', tipo_carne='Importata' WHERE cod='LOC1027';
+UPDATE sushibar SET allyoucaneat='no', tipo_sushi='Giapponese' WHERE cod='LOC1027';
+
+INSERT INTO residenza VALUES('Via Gabriele Jannelli','550','80131','Napoli',null);
+INSERT INTO location VALUES(null,'Osteria Giappoletana','R1028','Ristorante','IT475874588','L osteria giappoletana mischia i sapori della terra partenopea insieme a quelli giapponesi.');
+UPDATE ristorazione SET prezzo_medio=40, n_posti=25,tipo_ristorazione='Brace e Sushi' WHERE cod='LOC1028';
+UPDATE braceria SET asporto='no', alcolici_artigianali='no', tipo_carne='Italiana' WHERE cod='LOC1028';
+UPDATE sushibar SET allyoucaneat='no', tipo_sushi='Giapponese' WHERE cod='LOC1028';
+
+INSERT INTO residenza VALUES('Corso Vittorio Emanuele','50','80010','Villaricca',null);
+INSERT INTO location VALUES(null,'1Q84 SushiBraceria','R1029','Ristorante',default,default);
+UPDATE ristorazione set prezzo_medio=40, n_posti=30, tipo_ristorazione='Brace e Sushi' where cod='LOC1029';
+UPDATE braceria set asporto='no', alcolici_artigianali='no', tipo_carne='Non Specificato' where cod='LOC1029';
+UPDATE sushibar set allyoucaneat='no', tipo_sushi='Giapponese' where cod='LOC1029';
+
+--Pizza e Sushi
+INSERT INTO residenza VALUES('Via Posillipo','319','80123','Possillipo',null);
+INSERT INTO location VALUES(null,'Yao','R1030','Ristorante','IT125458986','Pietanze giapponesi servite in un locale moderno con luci colorate e quadri contemporanei.');
+UPDATE ristorazione SET prezzo_medio=30, n_posti=40,tipo_ristorazione='Pizza e Sushi' WHERE cod='LOC1030';
+UPDATE sushibar SET allyoucaneat='si', tipo_sushi='Fusion' WHERE cod='LOC1030';
+UPDATE pizzeria SET asporto='no', tipo_forno='Elettrico' WHERE cod='LOC1030';
+
+INSERT INTO residenza VALUES('Via Monteoliveto','35','80134','Napoli',null);
+INSERT INTO location VALUES(null,'Koi','R1031','Ristorante','IT125465896','Ottimo suhi, con pietanze tipiche giapponesi insieme a quelle napoletane.');
+UPDATE ristorazione SET prezzo_medio=25, n_posti=50,tipo_ristorazione='Pizza e Sushi' WHERE cod='LOC1031';
+UPDATE sushibar SET allyoucaneat='no', tipo_sushi='Giapponese' WHERE cod='LOC1031';
+UPDATE pizzeria SET asporto='si', tipo_forno='Entrambi' WHERE cod='LOC1031';
+
+INSERT INTO residenza VALUES('Via Oberdan','5','80078','Pozzuoli',null);
+INSERT INTO location VALUES(null,'UMAMI','R1032','Ristorante','IT125468968','Cibo cinese di alta qualità accompagnato su richiesta da la vera pizza napoletana.');
+UPDATE ristorazione SET prezzo_medio=22, n_posti=25,tipo_ristorazione='Pizza e Sushi' WHERE cod='LOC1032';
+UPDATE sushibar SET allyoucaneat='si', tipo_sushi='Cinese' WHERE cod='LOC1032';
+UPDATE pizzeria SET asporto='si', tipo_forno='A legna' WHERE cod='LOC1032';
+
+--Attrazioni
+
+INSERT INTO residenza VALUES('Via Francesco de Sanctis','19/21','80134','Napoli',null);
+INSERT INTO location VALUES(null,'Cappella San Severo','R1033','Attrazione',default,'La cappella Sansevero è tra i più importanti musei di Napoli. Situata nelle vicinanze della piazza San Domenico Maggiore, questa chiesa, oggi sconsacrata, è attigua al palazzo di famiglia dei principi di Sansevero.');
+UPDATE attrazione SET pagamento='si',tipo_attrazione='Chiesa' WHERE cod='LOC1033';
+
+INSERT INTO residenza VALUES('Via Eldorado','3','80132','Napoli',null);
+INSERT INTO location VALUES(null,'Castel dellOvo','R1034','Attrazione',default,'Il castel dell Ovo, è il castello più antico della città di Napoli ed è uno degli elementi che spiccano maggiormente nel celebre panorama del golfo.');
+UPDATE attrazione SET pagamento='si',tipo_attrazione='Monumento' WHERE cod='LOC1034';
+
+INSERT INTO residenza VALUES('Piazza del Gesù Nuovo','2','80135','Napoli',null);
+INSERT INTO location VALUES(null,'Chiesa Gesù Nuovo','R1034','Attrazione',default,'La chiesa del Gesù Nuovo, o della Trinità Maggiore, è una chiesa basilicale di Napoli, sita in piazza del Gesù Nuovo di fronte all obelisco dell Immacolata e alla basilica di Santa Chiara.');
+UPDATE attrazione SET pagamento='no',tipo_attrazione='Chiesa' WHERE cod='LOC1035';
+
+INSERT INTO residenza VALUES('Viale John Fitzgerald','75','80125','Fuorigrotta',null);
+INSERT INTO location VALUES(null,'Edenlandia','R1036','Attrazione',default,'Edenlandia è un parco divertimenti di Napoli sito in viale Kennedy nel quartiere Fuorigrotta. È il primo parco di divertimenti italiano.');
+UPDATE attrazione SET pagamento='si',tipo_attrazione='Parco Giochi' WHERE cod='LOC1036';
+
+INSERT INTO residenza VALUES('Piazza Museo','19','80135','Napoli',null);
+INSERT INTO location VALUES(null,'Museo Archeologico','R1037','Attrazione',default,'Il Museo archeologico nazionale di Napoli è uno storico ente museale, tra i più importanti della città partenopea.');
+UPDATE attrazione SET pagamento='si',tipo_attrazione='Museo' WHERE cod='LOC1037';
+
+INSERT INTO residenza VALUES('Piazza San Gaetano','68','80135','Napoli',null);
+INSERT INTO location VALUES(null,'Napoli Sotterranea','R1038','Attrazione',default,'Un substrato ricco di storia e legato alla riscoperta di un patrimonio raro, se non unico nel suo genere. Opere di grande ingegneria civile, lasciate a lungo in abbandono e oggi recuperate a nuova vita grazie al lavoro di Napoli Sotterranea.');
+UPDATE attrazione SET pagamento='si',tipo_attrazione='Museo' WHERE cod='LOC1038';
+
+INSERT INTO residenza VALUES('Piazza del Plebiscito','1','80132','Napoli',null);
+INSERT INTO location VALUES(null,'Palazzo Reale','R1039','Attrazione',default,'Il Palazzo Reale di Napoli è un edificio storico ubicato in piazza del Plebiscito, nel centro storico di Napoli, dov è posto l ingresso principale: l intero complesso, compresi i giardini e il teatro San Carlo');
+UPDATE attrazione SET pagamento='no',tipo_attrazione='Monumento' WHERE cod='LOC1039';
+
+INSERT INTO location VALUES(null,'Piazza Pebliscito','R1039','Attrazione',default,'Piazza del Plebiscito è una piazza di Napoli posizionata a termine di via Toledo, non appena oltrepassata piazza Trieste e Trento.');
+UPDATE attrazione SET pagamento='no',tipo_attrazione='Monumento' WHERE cod='LOC1040';
+
+INSERT INTO residenza VALUES('Via San Gregorio Armeno','1','80134','Napoli',null);
+INSERT INTO location VALUES(null,'Via dei Presepi','R1040','Attrazione',default,'Via San Gregorio Armeno è una strada del centro storico di Napoli, celebre turisticamente per le botteghe artigiane di presepi.');
+UPDATE attrazione SET pagamento='no',tipo_attrazione='Monumento' WHERE cod='LOC1041';
+
+INSERT INTO residenza VALUES('Piazzale Vincenzo Tecchio','1','80125','Fuorigrotta',null);
+INSERT INTO location VALUES(null,'Stadio San Paolo','R1041','Attrazione',default,'Lo stadio San Paolo, già del Sole, è il principale impianto polisportivo della città di Napoli. Di proprietà del Comune di Napoli, è situato a Fuorigrotta, quartiere della X Municipalità.');
+UPDATE attrazione SET pagamento='si',tipo_attrazione='Centro Sportivo' WHERE cod='LOC1042';
+
+INSERT INTO residenza VALUES('Via Solfatara','1','80078','Pozzuoli',null);
+INSERT INTO location VALUES(null,'Solfatara','R1042','Attrazione',default,'La solfatara di Pozzuoli è uno dei quaranta vulcani che costituiscono i Campi Flegrei; è ubicata a circa tre chilometri dal centro della città di Pozzuoli.');
+UPDATE attrazione SET pagamento='no',tipo_attrazione='Parco' WHERE cod='LOC1043';
+
+INSERT INTO residenza VALUES('Via San Carlo','98','80132','Napoli',null);
+INSERT INTO location VALUES(null,'Teatro San Carlo','R1043','Attrazione',default,'Il Teatro di San Carlo, noto semplicemente come Teatro San Carlo, è un teatro lirico di Napoli, nonché uno dei più famosi e prestigiosi al mondo. È tra i più antichi teatri d opera chiusi in Europa e del mondo ancora attivi.');
+UPDATE attrazione SET pagamento='si',tipo_attrazione='Teatro' WHERE cod='LOC1044';
+
+INSERT INTO location VALUES(null,'UCI Cinemas','R1023','Attrazione',default,'Situato nel centro giochi di Casoria, l uci cinemas offre 11 sale tra cui alcune IMAX per una visione in realtà virtuale.');
+UPDATE attrazione SET pagamento='si',tipo_attrazione='Cinema' WHERE cod='LOC1045';
+
+INSERT INTO residenza VALUES('Via Vesuvio','1','80049','Napoli',null);
+INSERT INTO location VALUES(null,'Vesuvio','R1044','Attrazione',default,'Il Vesuvio è uno dei due vulcani attivi dell Europa continentale nonché uno dei più studiati e pericolosi al mondo a causa dell elevata popolazione delle zone circostanti e delle sue caratteristiche esplosive.');
+UPDATE attrazione SET pagamento='si',tipo_attrazione='Parco' WHERE cod='LOC1046';
+
+INSERT INTO residenza VALUES('Via Francesco Caracciolo','1','80134','Napoli',null);
+INSERT INTO location VALUES(null,'Lungomare Mergellina','R1045','Attrazione',default,'Via Caracciolo è una lunga ed ampia promenade di Napoli, che, fiancheggiando il Parco della Villa Comunale e la Riviera di Chiaia, costituisce parte del lungomare della città.');
+UPDATE attrazione SET pagamento='no',tipo_attrazione='Parco' WHERE cod='LOC1047';
